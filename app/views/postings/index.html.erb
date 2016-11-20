@@ -1,0 +1,11 @@
+<h1> Product Listing </h1>
+
+<% @postings.each do |posting| %>
+  <h2><%= posting.name %> </h2>
+  <p> $<%= posting.price %> </p>
+  <%= posting.description %>
+<% end %>
+
+<div>
+  <a href="/postings/new"> Click here to add a posting! </a>
+</div>
